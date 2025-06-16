@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_28pt-Regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_28pt-Medium.woff");
+  font-weight: 500;
+}
+
+body {
+  font-family: Inter;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-two {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("./d02906578a54c8c1498cfed2d1bd53b641805952.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.footer {
+  background-image: url('/images/footer-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

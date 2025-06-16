@@ -1,0 +1,41 @@
+.explore_header {
+    background-image: url("/images/header-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.view_all::after {
+    content: '';
+    display: inline-block;
+    background-image: url("/icons/arrow.svg");
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.search_input::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("/icons/search.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.arrow::after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url("/icons/arrow-bottom.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}

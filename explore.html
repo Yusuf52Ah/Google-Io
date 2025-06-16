@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IO Google - Explore</title>
+    <link rel="shortcut icon" href="./Group 1.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/explore.css">
+</head>
+
+<body>
+    <header class="explore_header">
+        <nav class="flex items-center px-10 justify-between bg-linear-65 py-[21px]">
+            <div class="flex items-center gap-14">
+                <a href="index.html">
+                    <img src="./icons/dark-logo.svg" alt="LOGO">
+                </a>
+                <ul class="text-[#374151] [&>li>a]:font-medium [&>li>a]:text-base flex items-center gap-6">
+                    <li>
+                        <a href="explore.html" class="underline">Explore</a>
+                    </li>
+                    <li>
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="text-[#374151]">Sign in</button>
+        </nav>
+        <div class="flex items-center justify-between pl-10">
+            <div>
+                <h1 class="text-[85.05px] leading-[90px] tracking-[-4px] mb-4 font-medium">
+                    Watch and explore
+                </h1>
+                <p class="font-medium text-[20px] mb-10">
+                    Review keynotes, sessions, and learning experiences about the latest developer
+                    products and platforms.
+                </p>
+                <a href=""
+                    class="bg-[#1A73E8] rounded-full py-4 px-[34px] text-white font-medium text-[18px] leading-[20px]">
+                    See all content
+                </a>
+            </div>
+            <div>
+                <img src="./images/explore-header.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container mx-auto py-20">
+      <p class="font-medium text-[61px] leading-[64px] text-center">What are you building for?</p>
+      <a href="#">
+        <div class="flex flex-wrap justify-center items-center gap-6 mt-12">
+        <div class="outline-white bg-linear-180 from-[#34A95D] to-[#3899D7] rounded-[15px] outline-1">
+          <img src="./io25-stage-android.webp.svg" alt="">
+          <div class="border-4 bg-white rounded-b-[15px] py-6 text-center border-[#3899D7]">
+            <p class="text-[22px] leading-[26px]">Android</p>
+          </div>
+        </div>
+        <div class="outline-white bg-linear-180 from-yellow-500 to-orange-700 rounded-[15px] outline-1">
+          <img src="./images/section 2 img 2 .svg" alt="">
+          <div class="border-4 bg-white rounded-b-[15px] py-6 text-center border-[#EA4435]">
+            <p class="text-[22px] leading-[26px]">AI</p>
+          </div>
+        </div>
+        <div class="outline-white bg-linear-180 from-yellow-500 to-green-600 rounded-[15px] outline-1">
+          <img src="./images/section 2 img 3.svg" alt="">
+          <div class="border-4 bg-white rounded-b-[15px] py-6 text-center border-[#36A953]">
+            <p class="text-[22px] leading-[26px]">Web</p>
+          </div>
+        </div>
+        <div class="outline-white bg-linear-180 from-red-600 to-blue-600 rounded-[15px] outline-1">
+          <img src="./images/section 2 img 4.svg" alt="">
+          <div class="border-4 bg-white rounded-b-[15px] py-6 text-center border-[#4385F4]">
+            <p class="text-[22px] leading-[26px]">Cloud</p>
+          </div>
+        </div>
+      </div>
+      </a>
+      </section>
+        <section class="py-[96px]">
+            <div class="container">
+                <div class="flex items-center justify-between mb-10">
+                    <h2 class="font-medium text-[60px] leading-[64px] ">Find a session</h2>
+                    <a href="view_all"
+                        class="flex gap-2 text-[#1A73E8] items-center font-medium text-[19px] leading-[30px] view_all">View
+                        all speakers</a>
+                </div>
+
+                <div class="border border-[#9CA3AF] p-10 rounded-[20px] flex items-center justify-between mb-10">
+                    <div class="flex items-center gap-6">
+                        <img class="w-[61px] h-[65px]" src="./images/img1.png" alt="img 1">
+                        <div>
+                            <h3>Recommended content</h3>
+                            <p>See what content matches your interests.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <select class="" name="view" id="view">
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div
+                    class="border-2 flex items-center pl-[26px] gap-4 search_input border-[#E5E7EB] rounded-full mb-10">
+                    <input class="w-full flex outline-none py-[26px]" type="text"
+                        placeholder="Search by topic or title">
+                </div>
+                <div class="w-full grid grid-cols-4 gap-8">
+                    <div class="col-span-1">
+                        <div class="border-2 border-[#1A73E8] rounded-[16px] overflow-hidden">
+                            <div class="bg-[#1A73E8] text-white flex items-center justify-between px-5 py-4 arrow">
+                                <p>Focus area</p>
+                            </div>
+                            <div class="py-4 px-5 flex flex-col gap-6">
+                                <div>
+                                    <input type="checkbox" id="ai">
+                                    <label for="id">AI</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ai">
+                                    <label for="id">Android</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ai">
+                                    <label for="id">Cloud</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ai">
+                                    <label for="id">Web</label>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-span-3">
+                      <h3 class="text-[22px] leading-6 mb-6">Featured sessions</h3>
+                      <a href="#">
+                        <div class="flex items-center border border-[#9CA3AF] rounded-[20px] p-6">
+                        <img src="./img/main social media.svg" alt="">
+                        <div class="items-center ml-[18px]">
+                          <h3 class="text-[24px] leading-6 my-2 ">Google keynote</h3>
+                          <p class="text-[18px] leading-6">Discover how we’re furthering our mission to organize the world’s information andmake it universally accessible and useful.</p>
+                        </div>
+                      </a>
+                      </div>
+                      <a href="developer keynote.html">
+                        <div class="flex items-center border border-[#9CA3AF] rounded-[20px] p-6">
+                        <img src="./img/main social media 2.svg" alt="">
+                        <div class="items-center ml-[18px]">
+                          <h3 class="text-[24px] leading-6 my-2 ">Developer keynote</h3>
+                          <p class="text-[18px] leading-6">Discover how Google’s latest technologies and Gemini ecosystem enhance developer workflows, boost productivity, and enable innovative user experiences                            across Android devices, web browsers, and more.</p>
+                        </div>
+                      </div>
+                      </a>
+                   <hr class="my-10 text-[#9CA3AF]"> 
+                   <div>
+                    <h3 class="mb-6">All sessions</h3>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Demis Hassabis on the frontiers of AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-250 from-[#4186F2] to-[#33A95C] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>What’s new in Android</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#FABC04] to-[#36A953] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Chrome</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Web</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#E94436] to-[#4485F4] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Google Cloud</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Cloud</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Google’s AI stack for developers</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-260 from-[#5994F4] to-[#34A858] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Google Play</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Android</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#F7BC06] to-[#37A952] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in web</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Web</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#E94437] to-[#4784F2] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Firebase</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Cloud</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>Accelerate your development with the Gemini API</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>AI</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-260 from-[#4286F3] to-[#34A858] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Android development tools</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Android</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#F5BD07] to-[#35A853] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in web UI</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Web</p>
+                            <p>Session</p>  
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#DE4A4B] to-[#4585F3] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>Automate your work and integrate with Google Workspace</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Cloud</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in the Gemmaverse</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>AI</p>
+                            <p>Sessions</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>Adaptive Android development makes your app shine across devices</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Android</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Angular</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Web</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>What’s new in Flutter</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Cloud</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                        <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                        <div>
+                          <h3>Android notifications and Live Updates</h3>
+                          <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                            <p>Android</p>
+                            <p>Session</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Boost productivity with custom solutions on Google Workspace</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Unlock your organization’s collective brilliance with Agentspace</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Darren Aronofsky and Demis Hassabis on storytelling in the age of AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Quantum computing: Reading signals from the noise</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Science in the age of AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Turing winner David Patterson: How to give AI a bad carbon footprint</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Under the hood with Google AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Waymo: AI in the physical world powering the future of driving</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>What’s new in Go</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>AI app development with Firebase, from prototype to production</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build agentic apps with Flutter and Firebase AI Logic</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Client side Web AI agents to build smarter future user experiences</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>JAX in action</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Small language models with Google AI Edge</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>The future is now, with Compose and AI on Android XR</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-[#FCBA07] to-[#EB4834] rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Train your JAX models using model.fit(...) in Keras 3</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Android accessibility updates</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Best practices for using web in your Android apps</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build more accessible UIs with Jetpack Compose</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build next-level UX with Material 3 Expressive</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Building differentiated apps for Android XR with 3D content</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Demystify KMP builds and structure</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Discover the latest Google Pay and Google Wallet features</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Engage users on Google TV with excellent TV apps</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Enhance your Android app with Gemini Pro and Flash, and Imagen</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Finding the perfect Gemini fit on Android</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Gemini Nano on Android: Building with on-device gen AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Google Home APIs, tools, and Gemini capabilities for your apps</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>How Flutter makes the most of your platforms</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Mastering text input in Compose</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Maximizing ROI on Google Play</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>New in-car app experiences</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Next-gen Android experiences with photorealistic 3D Maps</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Seamless video capture, editing and playback with CameraX and Media3</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Unlock user productivity with desktop windowing and stylus support</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-600 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>What’s your player loyalty score? Engaging players with PGS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Deploy Angular and Next.js with Firebase App Hosting</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Do more with Chrome DevTools and less CTRL + TAB</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Go faster and reach further with Chrome Extensions</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Identity, payments, and embeds without third-party cookies</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Performance debugging in DevTools</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Practical built-in AI with Gemini Nano in Chrome</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Reshaping user authentication and identity verification</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>The future of Chrome Extensions with Gemini in your browser</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Web AI use cases and strategies in the real world</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-green-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Web animations today and tomorrow</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Web</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build AI agents grounded with your data using Firebase Data Connect</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build full-stack AI apps in minutes with Firebase Studio</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Build no-code intelligent Agents with AppSheet, Gemini, and Vertex AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Building AI agents on Google Cloud</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Cloud Assist in action</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Generative AI for data practitioners</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Introduction to Imagen, Veo, and generative media on Vertex AI</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Protect your cloud data with Security Command Center</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Reduce toil and boost productivity with AI agents across the SDLC</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Technical benefits of the Google Developer Program</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-red-600 to-blue-600 rounded-xl" src="./img/main section social media2.svg" alt="">
+                      <div>
+                        <h3>Unlocking ML performance secrets with insights from TensorBoard</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Cloud</p>
+                          <p>Session</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-orange-700 rounded-xl" src="./img/main section explore 3.svg" alt="">
+                      <div>
+                        <h3>5 practical Gemini API uses for developers</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Workshop</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-180 from-yellow-500 to-orange-700 rounded-xl" src="./img/main section explore 3.svg" alt="">
+                      <div>
+                        <h3>Build a Transformer with JAX</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>AI</p>
+                          <p>Workshop</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Get started with KMP</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Migrate Room Database to KMP</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Android basics with Compose</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Best practices for Health Connect app</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Build a mobile app using Home APIs on Android</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Build a mobile app using Home APIs on iOS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Building watch faces for Wear OS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Create advanced automations using Home APIs on Android</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Create your first tile in Wear OS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Implement audio while driving in parked app for Android Automotive OS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Jetpack Compose for Android developers</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Keyboard focus management in Compose</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Learn Android XR fundamentals: Part 1 - Modes and Spatial Panels</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Learn Android XR fundamentals: Part 2 - Orbiters and Environments</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 4.svg" alt="">
+                      <div>
+                        <h3>Maximizing your Play Billing integration for business growth</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android</p>
+                          <p>Codelab</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 5.svg" alt="">
+                      <div>
+                        <h3>Compose for Wear OS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android/p>
+                          <p>Learning pathway</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 5.svg" alt="">
+                      <div>
+                        <h3>Android AI integrations and tools</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android/p>
+                          <p>Learning pathway</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 5.svg" alt="">
+                      <div>
+                        <h3>Bring your experience to the watch with Wear OS</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android/p>
+                          <p>Learning pathway</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 5.svg" alt="">
+                      <div>
+                        <h3>Improve the user experience of your Android app</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android/p>
+                          <p>Learning pathway</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                      <div class="flex items-center border border-[#9CA3AF] p-6 gap-6 bg-[#F9FAFB] mt-4 rounded-[20px] ">
+                      <img class="bg-linear-260 from-blue-500 to-green-600 rounded-xl" src="./img/main section social media 5.svg" alt="">
+                      <div>
+                        <h3>Privacy-first Android SDK development with SDK Runtime</h3>
+                        <div class="flex gap-6 text-[22] leading-6 font-medium text-base text-[#374151] ">
+                          <p>Android/p>
+                          <p>Learning pathway</p>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class=" bg-white">
+
+      <div class="p-10 flex items-center justify-between">
+        <div class="text-[#111827]">
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#">
+                I/O Puzzle
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy & terms
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#">
+                <img src="./icons/footer logo icons.svg" alt="">
+              </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
